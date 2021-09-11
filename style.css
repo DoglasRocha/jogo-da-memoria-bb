@@ -16,11 +16,7 @@ body {
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.card:active {
-	transform: scale(0.95);
-	transition: transform .3s;
+	perspective: 1000px;
 }
 
 .card {
@@ -31,6 +27,14 @@ body {
 	box-shadow: 1px 1px 1px rgba(1,1,1,0.3);
 	cursor: pointer;
 	transform: scale(1);
+	transform-style: preserve-3d; /* não deixa o elemento achatado no plano */
+	transition: transform .9s;
+	backface-visibility: hidden; /* propriedade que retira o verso do elemento */
+}
+
+.card:active {
+        transform: scale(0.95);
+        transition: transform .3s;
 }
 
 .card-front, .card-back {
@@ -40,4 +44,14 @@ body {
 	position: absolute;
 	border-radius: 10px;
 	background: #121212;
+}
+
+.card-front {
+	transform: rotateY(180deg);
+}
+
+/* flip card animation */
+
+.flip {
+	transform: rotateY(180deg);
 }
