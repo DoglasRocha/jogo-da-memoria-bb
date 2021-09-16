@@ -5,7 +5,7 @@
 
 * Utilizei HTML, CSS e JavaScript, com as animações feitas em CSS.
 
-* Você pode encontrar o resultado <a href="https://doglasrocha.github.io/jogo-da-memoria-bb/">aqui</a>.
+* Você pode encontrar o resultado <a href="https://doglasrocha.github.io/jogo-da-memoria-bb/" target="_blank">aqui</a>.
 
 * Imagem do projeto:
 
